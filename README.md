@@ -29,6 +29,7 @@ This guide will help you get started with using the Echo-Chat application. Follo
 Disclaimer: You may encounter some issues since the application is in the development stage. Please refresh the page if needed, as it might resolve the problem.
 
 ## 1. Getting Started
+
 Logging In
 
 When you first visit Echo-Chat, you will land on the Login Page.
@@ -197,15 +198,3 @@ Deployed on Render. The RESTful API can be accessed at Render.
 
 Frontend: Chat Application Frontend
 Backend: Chat Application Backend
-
-
-
-
-
-
-
-
-
-
-
-
