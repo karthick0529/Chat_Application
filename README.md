@@ -85,7 +85,7 @@ Managing Groups: Use the manage group feature to keep groups organized.
 
 4. Contact Us
 
-For further assistance, connect via LinkedIn or reach out through email at yukeshchandran002@gmail.com.
+For further assistance, connect via LinkedIn or reach out through email at karthicknandha619@gmail.com.
 
 ## Chat Application Description
 
