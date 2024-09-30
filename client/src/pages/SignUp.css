@@ -1,0 +1,163 @@
+/* General container styling */
+.container {
+  padding: 2rem;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/008/079/021/original/blue-chat-app-icon-on-blue-background-3d-illustration-vector.jpg'); /* Add your image path here */
+  background-size: cover; /* Cover the entire container */
+
+}
+
+/* App description styling */
+.app-description {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color:white;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.app-tagline {
+  font-size: 1.25rem;
+  color:white;
+  text-align: center;
+}
+
+/* Registration card styling */
+.registration-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.registration-card h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* Form group styling */
+.mb-3 {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #495057;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  color: #495057;
+}
+
+/* Avatar container styling */
+.avatar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.avatar,
+.avatar-default {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+.pro-lab label {
+  cursor: pointer;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+/* Password input styling */
+.password-wrapper {
+  position: relative;
+}
+
+.password-icon {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #007bff;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+/* Separator styling */
+.separator {
+  text-align: center;
+  position: relative;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+.login-btnn {
+  display: block;
+  width: 100%;
+  background-color: #6c757d; /* secondary color */
+  color: #ffffff;
+  text-align: center;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s;
+  border: none;
+  text-decoration: none;
+}
+
+.login-btnn:hover {
+  background-color: #5a6268;
+  color: #ffffff;
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 45%;
+  height: 1px;
+  background-color: #ced4da;
+}
+
+.separator::before {
+  left: 0;
+}
+
+.separator::after {
+  right: 0;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .registration-card {
+    padding: 1.5rem;
+  }
+  .app-description {
+    font-size: 2rem;
+  }
+}
+
+.span-clr{
+  color: red;
+}
