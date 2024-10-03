@@ -188,13 +188,20 @@ Deployment: Netlify (Frontend), Render (Backend)
 
 Frontend:
 
+Link: 
+
 Deployed on Netlify. Visit the live demo to interact with the application.
 
 Backend:
+
+Link: https://chat-application-n1z3.onrender.com
 
 Deployed on Render. The RESTful API can be accessed at Render.
 
 ## Repositories
 
+Link: https://github.com/karthick0529/Chat_Application
+
 Frontend: Chat Application Frontend
 Backend: Chat Application Backend
+
