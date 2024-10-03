@@ -150,6 +150,9 @@ app.use(errorMiddleware);
 
 server.listen(PORT, () => {
   console.log(`Server is running on port ${PORT} in ${envMode} Mode`);
+
 });
 
 export { envMode, userSocketIDs };
+
+
