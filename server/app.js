@@ -36,7 +36,8 @@ const io = new Server(server, {
       process.env.CLIENT_URL,
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true,
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true, // Allow credentials
   },
 });
 
@@ -55,13 +56,10 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173",
-      "http://localhost:4173",
-      process.env.CLIENT_URL,
-    ],
+    origin: ["http://localhost:5173", "http://localhost:4173", process.env.CLIENT_URL],
     methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true,
+    allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With"],
+    credentials: true, // This allows cookies and authorization headers
   })
 );
 app.set("io", io);
@@ -72,11 +70,10 @@ app.get("/", (req, res) => {
   res.send("I am Home");
 });
 io.use((socket, next) => {
-  cookieParser()(
-    socket.request,
-    socket.request.res,
-    async (err) => await socketAuthenticator(err, socket, next)
-  );
+  cookieParser()(socket.request, socket.request.res, (err) => {
+    if (err) return next(err);
+    socketAuthenticator(socket, next); // Pass valid socket to the next function
+  });
 });
 
 io.on("connection", (socket) => {
