@@ -78,13 +78,13 @@ Profile:
 Edit Profile: Update your profile information.
 Delete Account: You can delete your account if necessary.
 
-3. Tips and Tricks
+## 3. Tips and Tricks
 
 Searching Users: Use the search function in the header to find friends quickly.
 Creating Groups: The plus icon helps you organize group chats efficiently.
 Managing Groups: Use the manage group feature to keep groups organized.
 
-4. Contact Us
+## 4. Contact Us
 
 For further assistance, connect via LinkedIn or reach out through email at karthicknandha619@gmail.com.
 
