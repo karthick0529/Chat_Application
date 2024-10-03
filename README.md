@@ -1,10 +1,10 @@
-## Echo-Chat Application
+## Chit-Chat Application
 
-This guide will help you get started with the Echo-Chat application. Follow the instructions below to navigate through the platform efficiently.
+This guide will help you get started with the Chit-Chat application. Follow the instructions below to navigate through the platform efficiently.
 
 ## Table of Contents
 
-    Welcome to Echo-Chat
+    Welcome to Chit-Chat
     Getting Started
     Logging In
     Registering an Account
@@ -22,9 +22,9 @@ This guide will help you get started with the Echo-Chat application. Follow the 
     Tech Stack
     Deployment
 
-## Welcome to Echo-Chat
+## Welcome to Chit-Chat
 
-This guide will help you get started with using the Echo-Chat application. Follow these instructions to navigate through the platform efficiently.
+This guide will help you get started with using the Chit-Chat application. Follow these instructions to navigate through the platform efficiently.
 
 Disclaimer: You may encounter some issues since the application is in the development stage. Please refresh the page if needed, as it might resolve the problem.
 
@@ -32,7 +32,7 @@ Disclaimer: You may encounter some issues since the application is in the develo
 
 Logging In
 
-When you first visit Echo-Chat, you will land on the Login Page.
+When you first visit Chit-Chat, you will land on the Login Page.
 
 Login Page:
 

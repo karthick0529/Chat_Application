@@ -1,6 +1,6 @@
-## Welcome to Echo-Chat
+## Welcome to Chit-Chat
 
-This guide will help you get started with using the Echo-Chat application. Follow these instructions to navigate through the platform efficiently.
+This guide will help you get started with using the Chit-Chat application. Follow these instructions to navigate through the platform efficiently.
 
 Disclaimer:
 You may encounter some issues since the application is in the development stage. Please refresh the page if needed, as it might resolve the problem.
@@ -8,7 +8,7 @@ You may encounter some issues since the application is in the development stage.
 ## 1. Getting Started
 
   Logging In
-  When you first visit Echo-Chat, you will land on the Login Page.
+  When you first visit Chit-Chat, you will land on the Login Page.
 
 Login Page:
 

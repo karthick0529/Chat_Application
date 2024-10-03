@@ -94,7 +94,7 @@ const Header = () => {
         <Container>
           <Navbar.Brand className="d-none d-sm-block ">
             <Link to="/" className="text-white text-decoration-none">
-              Echo-Chat
+              Chit-Chat
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle

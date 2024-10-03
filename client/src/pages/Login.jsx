@@ -57,7 +57,7 @@ const Login = () => {
       <div className="row">
         <div className="col-md-6 d-flex align-items-center justify-content-center">
           <div>
-            <h2 className="app-description">Echo-Chat</h2>
+            <h2 className="app-description">Chit-Chat</h2>
             <p className="app-tagline">
             Connecting Hearts 🩵
             </p>
