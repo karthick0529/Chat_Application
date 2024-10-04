@@ -4,7 +4,6 @@ import { ErrorHandler } from "../utils/utility.js";
 import { TryCatch } from "./error.js";
 import jwt from "jsonwebtoken";
 
-
 const isAuthenticated = TryCatch((req, res, next) => {
   const token = req.cookies[DHEECHAT_TOKEN];
   if (!token)
@@ -17,11 +16,8 @@ const isAuthenticated = TryCatch((req, res, next) => {
   next();
 });
 
-
-const socketAuthenticator = async (err, socket, next) => {
+const socketAuthenticator = async (socket, next) => {
   try {
-    if (err) return next(err);
-
     const authToken = socket.request.cookies[DHEECHAT_TOKEN];
 
     if (!authToken)
@@ -35,11 +31,11 @@ const socketAuthenticator = async (err, socket, next) => {
       return next(new ErrorHandler("Please login to access this route", 401));
 
     socket.user = user;
-
     return next();
   } catch (error) {
     console.log(error);
     return next(new ErrorHandler("Please login to access this route", 401));
   }
 };
+
 export { isAuthenticated, socketAuthenticator };

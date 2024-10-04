@@ -5,11 +5,12 @@ import { v2 as cloudinary } from "cloudinary";
 import { getBase64, getSockets } from "../lib/helper.js";
 
 const cookieOptions = {
-  maxAge: 15 * 24 * 60 * 60 * 1000,
+  maxAge: 15 * 24 * 60 * 60 * 1000, // 15 days
   sameSite: "none",
   httpOnly: true,
   secure: true,
 };
+
 const connectDB = (uri) => {
   mongoose
     .connect(uri, { dbName: "Chit-Chat" })
@@ -20,7 +21,9 @@ const connectDB = (uri) => {
 };
 
 const sendToken = (res, user, code, message) => {
-  const token = jwt.sign({ _id: user._id }, process.env.JWT_SECRET);
+  const token = jwt.sign({ _id: user._id }, process.env.JWT_SECRET, {
+    expiresIn: "15d", // Make sure your token expires as expected
+  });
 
   return res.status(code).cookie("DheeChat-token", token, cookieOptions).json({
     success: true,
@@ -34,6 +37,7 @@ const emitEvent = (req, event, users, data) => {
   const usersSocket = getSockets(users);
   io.to(usersSocket).emit(event, data);
 };
+
 const uploadFilesToCloudinary = async (files = []) => {
   const uploadPromises = files.map((file) => {
     return new Promise((resolve, reject) => {
@@ -67,6 +71,7 @@ const uploadFilesToCloudinary = async (files = []) => {
 const deleteFilesFromCloudinary = async (public_ids) => {
   // Delete files from cloudinary
 };
+
 export {
   connectDB,
   sendToken,
