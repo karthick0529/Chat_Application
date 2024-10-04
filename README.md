@@ -2,31 +2,32 @@
 
 This guide will help you get started with the Chit-Chat application. Follow the instructions below to navigate through the platform efficiently.
 
-## Table of Contents
-
-    Welcome to Chit-Chat
-    Getting Started
-    Logging In
-    Registering an Account
-    Home Page Features
-    Header
-    Layout
-    Tips and Tricks
-    Contact Us
-    Chat Application Description
-    Design Phase
-    Development Phase
-    Frontend Development
-    Backend Development
-    Functionality
-    Tech Stack
-    Deployment
-
 ## Welcome to Chit-Chat
 
 This guide will help you get started with using the Chit-Chat application. Follow these instructions to navigate through the platform efficiently.
 
 Disclaimer: You may encounter some issues since the application is in the development stage. Please refresh the page if needed, as it might resolve the problem.
+
+## Deployment
+
+Frontend:
+
+Link: https://ornate-florentine-4f0745.netlify.app/
+
+Deployed on Netlify. Visit the live demo to interact with the application.
+
+Backend:
+
+Link: https://chat-application-backend-392z.onrender.com
+
+Deployed on Render. The RESTful API can be accessed at Render.
+
+## Repositories
+
+Link: https://github.com/karthick0529/Chat_Application
+
+Frontend: Client
+Backend: Server
 
 ## 1. Getting Started
 
@@ -184,24 +185,4 @@ Authentication: JWT, bcrypt
 Real-time Messaging: WebSockets (e.g., Socket.io)
 Deployment: Netlify (Frontend), Render (Backend)
 
-## Deployment
-
-Frontend:
-
-Link: 
-
-Deployed on Netlify. Visit the live demo to interact with the application.
-
-Backend:
-
-Link: https://chat-application-n1z3.onrender.com
-
-Deployed on Render. The RESTful API can be accessed at Render.
-
-## Repositories
-
-Link: https://github.com/karthick0529/Chat_Application
-
-Frontend: Chat Application Frontend
-Backend: Chat Application Backend
 
